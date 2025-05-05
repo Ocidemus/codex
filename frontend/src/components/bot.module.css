@@ -1,0 +1,17 @@
+.button {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  z-index: 1000;
+  background: linear-gradient(135deg, #068095, #24a1a6, #42c4b7, #66eccc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: right 0.2s ease;
+}
+.icon{
+    font-size: 3.2rem;
+    color: white;
+}

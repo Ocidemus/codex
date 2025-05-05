@@ -1,0 +1,70 @@
+.main {
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem 0 2rem;
+}
+.logo {
+  color: white;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: oblique;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.logo_img {
+  font-weight: 600;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.7rem;
+}
+.logo_text{
+  background: linear-gradient(135deg, #068095, #24a1a6, #42c4b7, #66eccc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 600;
+}
+.run {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #068095, #24a1a6, #42c4b7, #66eccc);
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 1s ease;
+}
+.run:hover{
+    background: linear-gradient(135deg, #66eccc, #42c4b7, #24a1a6, #068095);
+}
+.run_text {
+  color: white;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+.run_icon {
+  color: white;
+  font-size: 1.4rem;
+}
+.options {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.options select {
+  color: white;
+  background-color: black;
+  padding: 0.5rem;
+  border: none;
+}
+.options select option {
+  color: white;
+  background-color: black;
+}

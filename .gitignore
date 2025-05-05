@@ -1,0 +1,15 @@
+# Ignore model folders
+phi_2_local/
+distilgpt2_local/
+
+# Ignore large datasets
+codesearchnet_comments.jsonl
+
+# Ignore virtual environment
+.venv/
+
+# Ignore node_modules
+frontend/node_modules/
+
+# Ignore Python cache files
+__pycache__/

@@ -1,0 +1,45 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #181818;
+  min-height: 50px;
+  height: 300px;
+  max-height: 80vh;
+  resize: vertical;
+  overflow: auto;
+  width: 100%;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.312);
+}
+.resizer {
+  height: 4px;
+  width: 100%;
+  cursor: ns-resize;
+  background: #181818;
+  z-index: 10;
+}
+.resizer:hover {
+  background: #24a1a6;
+}
+.header {
+  height: 20px;
+  width: 100%;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+  padding: 0 1rem 0 1rem;
+}
+.exit {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.output {
+  margin-top: 2rem;
+  color: white;
+  padding: 1rem;
+  font-size: 1.3rem;
+  overflow-y: auto;
+  max-height: 100%;
+}
