@@ -142,7 +142,7 @@ Code Highlights
 
 Contributors
 
-- Aryan Singh @ocidemus  
+- Aryan Singh  
 - Shivam Chaudhary  
 - Abhinav Singh 
 
