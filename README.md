@@ -142,9 +142,9 @@ Code Highlights
 
 Contributors
 
-- Aryan Singh - Developer and AI integration  
-- Shivam Chaudhary - Backend & API setup  
-- Abhinav Singh - Frontend & UI design  
+- Aryan Singh @ocidemus  
+- Shivam Chaudhary  
+- Abhinav Singh 
 
 ---
 
