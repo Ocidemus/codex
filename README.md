@@ -96,7 +96,9 @@ Training code is available in train_model.py:
 - Fine-tunes distilgpt2 on the code_search_net dataset for generating docstrings/code.
 
 - Saved at ./distilgpt2-comment-gen after training.
+  
   ---
+  
 Project Structure
 
 - backend/: Python Flask server handling code execution and AI API integration  
@@ -111,7 +113,7 @@ Project Structure
 
   ---
 
-Code Highlights
+## Code Highlights
 
 ### Backend Code Execution (execute_code function)
 
