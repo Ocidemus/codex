@@ -1,6 +1,6 @@
 #  Codex - AI-Powered Code Assistant
 
-**Codex** is a web-based developer tool that combines code execution, comment generation, explanation, and visual flowcharting in a seamless AI-powered interface. Built using React, Flask, and Hugging Face Transformers, it enhances the coding experience with interactive features.
+**Codex** is a web-based developer tool that combines  AI-powered assistance features such as code commenting, explanation, terminal output viewing, code execution and chat-based help in a seamless AI-powered interface. Built using React, Flask, and Hugging Face Transformers, it enhances the coding experience with interactive features.
 
 ---
 
