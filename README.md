@@ -4,14 +4,14 @@
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🧠 **AI Chat Assistant**: Generate or explain code with natural language prompts via LLaMA 2 (`meta-llama/Llama-Vision-Free`) and Together API.
-- 💬 **Comment Generator**: Automatically add meaningful comments using `phi-2` fine-tuned LLM.
-- 🖼️ **Code Flowchart Visualizer**: Convert Python code into dynamic flowcharts using AST parsing and Graphviz.
-- 💻 **Multi-language Code Runner**: Execute Python, C, C++, and JavaScript code securely in a sandboxed environment.
-- 🎨 **Monaco Editor Integration**: Write and format code in a smooth, syntax-highlighted interface.
-- 🐳 **Dockerized Backend**: One-command container deployment with support for model loading and local inference.
+-  **AI Chat Assistant**: Generate or explain code with natural language prompts via LLaMA 2 (`meta-llama/Llama-Vision-Free`) and Together API.
+-  **Comment Generator**: Automatically add meaningful comments using `phi-2` fine-tuned LLM.
+-  **Code Flowchart Visualizer**: Convert Python code into dynamic flowcharts using AST parsing and Graphviz.
+-  **Multi-language Code Runner**: Execute Python, C, C++, and JavaScript code securely in a sandboxed environment.
+-  **Monaco Editor Integration**: Write and format code in a smooth, syntax-highlighted interface.
+-  **Dockerized Backend**: One-command container deployment with support for model loading and local inference.
 
 ---
 
@@ -69,8 +69,9 @@ Ensure that models like distilgpt2 or phi-2 are downloaded and placed in the ./d
 ## 🧠 Model Training
 Training code is available in train_model.py:
 
-**Fine-tunes distilgpt2 on the code_search_net dataset for generating docstrings/code.
-**Saved at ./distilgpt2-comment-gen after training.
+- **Fine-tunes distilgpt2 on the code_search_net dataset for generating docstrings/code.
+
+- **Saved at ./distilgpt2-comment-gen after training.
 
 ## 🛠 Requirements
 
