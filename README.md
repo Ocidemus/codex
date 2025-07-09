@@ -93,10 +93,10 @@ Ensure that models like distilgpt2 or phi-2 are downloaded and placed in the ./d
 ## 🧠 Model Training
 Training code is available in train_model.py:
 
-- **Fine-tunes distilgpt2 on the code_search_net dataset for generating docstrings/code.
+- Fine-tunes distilgpt2 on the code_search_net dataset for generating docstrings/code.
 
-- **Saved at ./distilgpt2-comment-gen after training.
-
+- Saved at ./distilgpt2-comment-gen after training.
+  ---
 Project Structure
 
 - backend/: Python Flask server handling code execution and AI API integration  
