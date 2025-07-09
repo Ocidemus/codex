@@ -33,3 +33,19 @@
 git clone https://github.com/your-username/codex.git
 cd codex
 ```
+### 2. Setup Python Backend
+   ```bash
+    cd backend
+    python -m venv venv
+    source venv/bin/activate  # or venv\Scripts\activate
+    pip install -r requirements.txt
+```
+  ##Add a .env file:
+
+```env
+TOGETHER_API_KEY=your_together_api_key
+```
+  ##Start the Flask server:
+```bash
+python app.py
+```
