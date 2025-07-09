@@ -33,30 +33,54 @@
 git clone https://github.com/your-username/codex.git
 cd codex
 ```
-### 2. Setup Python Backend
-   ```bash
-    cd backend
-    python -m venv venv
-    source venv/bin/activate  # or venv\Scripts\activate
-    pip install -r requirements.txt
-```
-### Add a .env file:
+### Backend Setup
 
-```env
-TOGETHER_API_KEY=your_together_api_key
+1. Create and activate a Python virtual environment:
+
+```bash
+python -m venv env
+source env/bin/activate  # On Windows use 'env\Scripts\activate'
 ```
-### Start the Flask server:
+
+2. Install Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Set environment variables:
+
+- Add your API keys (e.g., TOGETHER_API_KEY) in a .env file.
+
+4. Run the Flask backend:
+
 ```bash
 python app.py
 ```
-### 3. Setup React Frontend
+
+---
+
+### Frontend Setup
+
+1. Navigate to the frontend folder (if applicable):
+
 ```bash
 cd frontend
+```
+
+2. Install Node dependencies:
+
+```bash
 npm install
+```
+
+3. Start the development server:
+
+```bash
 npm run dev
 ```
-Open http://localhost:5173
 
+4. Open your browser to http://localhost:5173 (or the port specified).
 ## 🐳 Run with Docker
 ### Build and run:
 
@@ -73,24 +97,62 @@ Training code is available in train_model.py:
 
 - **Saved at ./distilgpt2-comment-gen after training.
 
-## 🛠 Requirements
+Project Structure
 
-Install with:
+- backend/: Python Flask server handling code execution and AI API integration  
+- frontend/: React app with components:
+  - App.jsx: Main app state and layout  
+  - CodeEditor.jsx: Code editing UI with syntax highlighting  
+  - Terminal.jsx: Output console for execution results  
+  - Prompt.jsx & Bot.jsx: AI chat assistant UI  
+  - Header.jsx, Footer.jsx: Navigation and status display  
+- eslint.config.js: ESLint configuration for React linting rules  
+- main.css: Global styling for UI
 
-```bash
-pip install -r requirements.txt
-```
+  ---
 
-### 📜 License
-MIT License.
+Code Highlights
 
-### 🙌 Credits
-Hugging Face Transformers
+### Backend Code Execution (execute_code function)
 
-Together API
+- Writes user code to temporary files by language
+- Compiles C/C++ code when needed
+- Runs the code safely with timeouts
+- Returns stdout or stderr to frontend
 
-Graphviz
+### AI Code Comment Generator (comment.py)
 
-CodeSearchNet dataset
+- Loads a local Hugging Face model for causal language modeling
+- Takes a code snippet and generates commented version using AI
 
-LLaMA community
+### Frontend App.jsx
+
+- Manages app-wide states like code, language, output, loading
+- Composes all UI components to create the code editor and terminal experience
+- Controls chat bot visibility and interaction
+
+### ESLint Configuration
+
+- Supports React 18.3 features
+- Includes recommended React and React Hooks linting rules
+- Configured for JSX and modern ECMAScript syntax
+
+---
+
+Contributors
+
+- Aryan Singh  
+- Shivam Chaudhary  
+- Abhinav Singh 
+
+---
+
+License
+
+This project is licensed under the MIT License.
+
+---
+
+Acknowledgments
+
+Special thanks to the open-source communities for React, Flask, Hugging Face, and ESLint for providing the powerful tools that made this project possible.
