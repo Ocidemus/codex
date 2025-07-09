@@ -40,12 +40,12 @@ cd codex
     source venv/bin/activate  # or venv\Scripts\activate
     pip install -r requirements.txt
 ```
-## Add a .env file:
+### Add a .env file:
 
 ```env
 TOGETHER_API_KEY=your_together_api_key
 ```
-## Start the Flask server:
+### Start the Flask server:
 ```bash
 python app.py
 ```
@@ -57,8 +57,8 @@ npm run dev
 ```
 Open http://localhost:5173
 
-### 🐳 Run with Docker
-## Build and run:
+## 🐳 Run with Docker
+### Build and run:
 
 ```bash
 docker build -t codex-backend .
@@ -66,13 +66,13 @@ docker run -p 5000:5000 --env-file .env codex-backend
 ```
 Ensure that models like distilgpt2 or phi-2 are downloaded and placed in the ./distilgpt2_local and ./phi_2_local directories.
 
-### 🧠 Model Training
+## 🧠 Model Training
 Training code is available in train_model.py:
 
-Fine-tunes distilgpt2 on the code_search_net dataset for generating docstrings/code.
-Saved at ./distilgpt2-comment-gen after training.
+**Fine-tunes distilgpt2 on the code_search_net dataset for generating docstrings/code.
+**Saved at ./distilgpt2-comment-gen after training.
 
-### 🛠 Requirements
+## 🛠 Requirements
 
 Install with:
 
